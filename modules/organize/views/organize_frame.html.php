@@ -5,6 +5,8 @@
 <style type="text/css">
   .g-organize div.thumb-album div.icon {
     background-image: url(<?= url::file("modules/organize/vendor/ext/images/default/tree/folder.gif") ?>);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 </style>
 <script type="text/javascript" src="<?= url::file("modules/organize/vendor/ext/js/ext-organize-bundle.js") ?>"></script>
