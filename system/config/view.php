@@ -18,6 +18,8 @@ $config['allowed_filetypes'] = array
 	'jpg', 'jpeg',
 	'png',
 	'tif', 'tiff',
+	'webp',
+	'avif',
 	'swf',
 	'htm', 'html',
 	'css',
