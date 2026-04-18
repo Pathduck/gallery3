@@ -32,6 +32,7 @@ class Image_Core {
 		IMAGETYPE_JPEG => 'jpg',
 		IMAGETYPE_PNG => 'png',
 		IMAGETYPE_WEBP => 'webp',
+		IMAGETYPE_AVIF => 'avif',
 		IMAGETYPE_TIFF_II => 'tiff',
 		IMAGETYPE_TIFF_MM => 'tiff',
 	);
