@@ -39,7 +39,7 @@ class legal_file_Core {
       $types_by_extension_wrapper = new stdClass();
       $types_by_extension_wrapper->types_by_extension = array(
         "jpg" => "image/jpeg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png",
-        "webp" => "image/webp");
+        "webp" => "image/webp", "avif" => "image/avif");
       module::event("photo_types_by_extension", $types_by_extension_wrapper);
       foreach (self::$blacklist as $key) {
         unset($types_by_extension_wrapper->types_by_extension[$key]);
