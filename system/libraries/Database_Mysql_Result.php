@@ -134,7 +134,6 @@ class Database_Mysql_Result_Core extends Database_Result {
 		{
 			// Set the current row to the offset
 			$this->current_row = $this->internal_row = $offset;
-
 			return TRUE;
 		}
 		else

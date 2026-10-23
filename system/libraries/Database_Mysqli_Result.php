@@ -135,7 +135,6 @@ class Database_Mysqli_Result_Core extends Database_Result {
 		{
 			// Set the current row to the offset
 			$this->current_row = $offset;
-
 			return TRUE;
 		}
 		else
