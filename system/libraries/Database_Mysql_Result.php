@@ -9,7 +9,11 @@
  */
 class Database_Mysql_Result_Core extends Database_Result {
 
+	// Declarations
+	// See: https://groups.google.com/g/gallery-3-users/c/OypwZQTIkgU/m/JVth_aI6AAAJ
 	protected $internal_row = 0;
+	protected $sql;
+	protected $result;
 
 	public function __construct($result, $sql, $link, $return_objects)
 	{
@@ -134,6 +138,7 @@ class Database_Mysql_Result_Core extends Database_Result {
 		{
 			// Set the current row to the offset
 			$this->current_row = $this->internal_row = $offset;
+
 			return TRUE;
 		}
 		else

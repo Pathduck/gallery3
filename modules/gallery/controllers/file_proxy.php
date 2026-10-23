@@ -47,7 +47,7 @@ class File_Proxy_Controller extends Controller {
     $var_uri = url::file("var/");
 
     // Fix for failing to load protected images
-    // Reverts: https://github.com/bwdutton/gallery3/commit/e3dc6b0102dbbb9c83137c373e6a8de708d11cc8
+    // Reverts: https://github.com/bwdutton/gallery3/commit/e3dc6b0
     //$compare_uri = url::file(ltrim($request_uri,'/'));
 
     // Make sure that the request is for a file inside var
