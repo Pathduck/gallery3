@@ -727,8 +727,8 @@ class access_Core {
     @mkdir(VARPATH . "security_test");
     try {
       if ($fp = @fopen(VARPATH . "security_test/.htaccess", "w+")) {
-        //fwrite($fp, "Options +SymLinksIfOwnerMatch\n");
-        fwrite($fp, "Options +FollowSymLinks\n");
+        //fwrite($fp, "Options +FollowSymLinks\n");
+        fwrite($fp, "Options +SymLinksIfOwnerMatch\n");
         fwrite($fp, "RewriteEngine On\n");
         fwrite($fp, "RewriteRule verify $success_url [L]\n");
         fclose($fp);
