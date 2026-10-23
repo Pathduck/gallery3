@@ -727,6 +727,7 @@ class access_Core {
     @mkdir(VARPATH . "security_test");
     try {
       if ($fp = @fopen(VARPATH . "security_test/.htaccess", "w+")) {
+        // Apache on SDF uses SymLinksIfOwnerMatch
         //fwrite($fp, "Options +FollowSymLinks\n");
         fwrite($fp, "Options +SymLinksIfOwnerMatch\n");
         fwrite($fp, "RewriteEngine On\n");
