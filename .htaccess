@@ -3,6 +3,7 @@
 # support but do support per-dir php.ini files, these settings are
 # mirrored in php.ini
 #
+
 <IfModule mod_php5.c>
   php_flag magic_quotes_gpc          Off
   php_flag magic_quotes_sybase       Off
@@ -80,13 +81,13 @@
 # want these changes to be persistent, talk to your system admin about
 # putting this block into your Apache config files.
 #
-# <IfModule mod_rewrite.c>
-#   Options +FollowSymLinks
-#   RewriteEngine On
-#   RewriteBase /
-#   RewriteCond %{REQUEST_FILENAME} !-f
-#   RewriteCond %{REQUEST_FILENAME} !-d
-#   RewriteRule ^(.*)$ index.php?kohana_uri=$1 [QSA,PT,L]
-#   RewriteRule ^$ index.php?kohana_uri=$1 [QSA,PT,L]
-#   RewriteRule ^index.php/(.*) $1 [QSA,R,L]
-# </IfModule>
+<IfModule mod_rewrite.c>
+  Options +SymLinksIfOwnerMatch
+  RewriteEngine On
+  RewriteBase /gallery
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?kohana_uri=$1 [QSA,PT,B,L]
+  RewriteRule ^$ index.php?kohana_uri=$1 [QSA,PT,B,L]
+  RewriteRule ^index.php/(.*) $1 [QSA,R,B,L]
+</IfModule>
