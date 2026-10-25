@@ -18,10 +18,10 @@
  * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
  */
 class gallery_Core {
-  const VERSION = "3.0+";
-  const CODE_NAME = "";
-  const RELEASE_CHANNEL = "git";
-  const RELEASE_BRANCH = "master";
+  const VERSION = "3.1.6";
+  const CODE_NAME = "Revival";
+  const RELEASE_CHANNEL = "release";
+  const RELEASE_BRANCH = "release/3";
 
   /**
    * If Gallery is in maintenance mode, then force all non-admins to get routed to a "This site is

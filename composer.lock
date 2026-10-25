@@ -4,31 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "234386dc58e5012bc4afe06afcfab5a9",
+    "content-hash": "e947b39154d26f4a8a043661e39fc0a4",
     "packages": [
         {
-            "name": "lsolesen/pel",
-            "version": "0.9.12",
+            "name": "fileeye/pel",
+            "version": "0.12.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pel/pel.git",
-                "reference": "b95fe29cdacf9d36330da277f10910a13648c84c"
+                "url": "https://github.com/FileEye/pel.git",
+                "reference": "96cce8aef576c8fe3154282d9d37f3cace7455e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pel/pel/zipball/b95fe29cdacf9d36330da277f10910a13648c84c",
-                "reference": "b95fe29cdacf9d36330da277f10910a13648c84c",
+                "url": "https://api.github.com/repos/FileEye/pel/zipball/96cce8aef576c8fe3154282d9d37f3cace7455e9",
+                "reference": "96cce8aef576c8fe3154282d9d37f3cace7455e9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.0"
+                "php": ">=8.1"
             },
             "require-dev": {
                 "ext-exif": "*",
                 "ext-gd": "*",
-                "php-coveralls/php-coveralls": ">2.4",
-                "squizlabs/php_codesniffer": ">3.5",
-                "symfony/phpunit-bridge": "^4 || ^5"
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^2",
+                "phpstan/phpstan-phpunit": "^2",
+                "phpunit/phpunit": "^10 || ^11 || ^12 || ^13",
+                "squizlabs/php_codesniffer": ">=3.7"
             },
             "type": "library",
             "autoload": {
@@ -55,17 +57,16 @@
                 }
             ],
             "description": "PHP Exif Library. A library for reading and writing Exif headers in JPEG and TIFF images using PHP.",
-            "homepage": "http://pel.github.com/pel/",
+            "homepage": "https://github.com/FileEye/pel",
             "keywords": [
                 "exif",
                 "image"
             ],
             "support": {
-                "issues": "https://github.com/pel/pel/issues",
-                "source": "https://github.com/pel/pel/tree/0.9.12"
+                "issues": "https://github.com/FileEye/pel/issues",
+                "source": "https://github.com/FileEye/pel/tree/0.12.1"
             },
-            "abandoned": true,
-            "time": "2022-02-18T13:20:54+00:00"
+            "time": "2026-03-19T18:27:55+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -152,35 +153,34 @@
     "packages-dev": [
         {
             "name": "php-parallel-lint/php-console-color",
-            "version": "v0.3",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-parallel-lint/PHP-Console-Color.git",
-                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e"
+                "reference": "7adfefd530aa2d7570ba87100a99e2483a543b88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Color/zipball/b6af326b2088f1ad3b264696c9fd590ec395b49e",
-                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Color/zipball/7adfefd530aa2d7570ba87100a99e2483a543b88",
+                "reference": "7adfefd530aa2d7570ba87100a99e2483a543b88",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.3.2"
             },
             "replace": {
                 "jakub-onderka/php-console-color": "*"
             },
             "require-dev": {
-                "php-parallel-lint/php-code-style": "1.0",
-                "php-parallel-lint/php-parallel-lint": "1.0",
+                "php-parallel-lint/php-code-style": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
                 "php-parallel-lint/php-var-dump-check": "0.*",
-                "phpunit/phpunit": "~4.3",
-                "squizlabs/php_codesniffer": "1.*"
+                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "JakubOnderka\\PhpConsoleColor\\": "src/"
+                    "PHP_Parallel_Lint\\PhpConsoleColor\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -193,45 +193,45 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "description": "Simple library for creating colored console ouput.",
             "support": {
                 "issues": "https://github.com/php-parallel-lint/PHP-Console-Color/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Console-Color/tree/master"
+                "source": "https://github.com/php-parallel-lint/PHP-Console-Color/tree/v1.0.1"
             },
-            "time": "2020-05-14T05:47:14+00:00"
+            "time": "2021-12-25T06:49:29+00:00"
         },
         {
             "name": "php-parallel-lint/php-console-highlighter",
-            "version": "v0.5",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-parallel-lint/PHP-Console-Highlighter.git",
-                "reference": "21bf002f077b177f056d8cb455c5ed573adfdbb8"
+                "reference": "5b4803384d3303cf8e84141039ef56c8a123138d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Highlighter/zipball/21bf002f077b177f056d8cb455c5ed573adfdbb8",
-                "reference": "21bf002f077b177f056d8cb455c5ed573adfdbb8",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Highlighter/zipball/5b4803384d3303cf8e84141039ef56c8a123138d",
+                "reference": "5b4803384d3303cf8e84141039ef56c8a123138d",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.4.0",
-                "php-parallel-lint/php-console-color": "~0.2"
+                "php": ">=5.3.2",
+                "php-parallel-lint/php-console-color": "^1.0.1"
             },
             "replace": {
                 "jakub-onderka/php-console-highlighter": "*"
             },
             "require-dev": {
-                "php-parallel-lint/php-code-style": "~1.0",
-                "php-parallel-lint/php-parallel-lint": "~1.0",
-                "php-parallel-lint/php-var-dump-check": "~0.1",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "php-parallel-lint/php-code-style": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
+                "php-parallel-lint/php-var-dump-check": "0.*",
+                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "JakubOnderka\\PhpConsoleHighlighter\\": "src/"
+                    "PHP_Parallel_Lint\\PhpConsoleHighlighter\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -248,9 +248,9 @@
             "description": "Highlight PHP code in terminal",
             "support": {
                 "issues": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/tree/master"
+                "source": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/tree/v1.0.0"
             },
-            "time": "2020-05-13T07:37:49+00:00"
+            "time": "2022-02-18T08:23:19+00:00"
         },
         {
             "name": "php-parallel-lint/php-parallel-lint",
@@ -377,15 +377,15 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.34",
+            "version": "2.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4dd89ca7aa30fdc6760be21550d583bcc32e8476",
-                "reference": "4dd89ca7aa30fdc6760be21550d583bcc32e8476",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6155239b488e95d26d1ebd95c6b4bb294d7f09db",
+                "reference": "6155239b488e95d26d1ebd95c6b4bb294d7f09db",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0"
+                "php": "^7.4|^8.0"
             },
             "conflict": {
                 "phpstan/phpstan-shim": "*"
@@ -403,6 +403,17 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Mirtes"
+                },
+                {
+                    "name": "Markus Staab"
+                },
+                {
+                    "name": "Vincent Langlet"
+                }
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
             "keywords": [
@@ -426,7 +437,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-28T10:04:39+00:00"
+            "time": "2026-10-08T21:09:11+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -513,7 +524,12 @@
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": "^8.2"
+    },
     "platform-dev": {},
+    "platform-overrides": {
+        "php": "8.2.12"
+    },
     "plugin-api-version": "2.9.0"
 }
