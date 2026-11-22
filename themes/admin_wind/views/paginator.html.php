@@ -41,7 +41,7 @@
   <?php endif ?>
 
   <?php if (isset($previous_page_url)): ?>
-    <a href="<?= $previous_page_url ?>" class="g-button ui-icon-left ui-state-default ui-corner-all">
+    <a href="<?= $previous_page_url ?>" class="g-button ui-icon-left ui-state-default ui-corner-all" rel="prev">
       <span class="ui-icon ui-icon-seek-prev"></span><?= t("Previous") ?></a>
   <?php else: ?>
     <a class="g-button ui-icon-left ui-state-disabled ui-corner-all">
@@ -67,7 +67,7 @@
 
   <li class="g-text-right">
   <?php if (isset($next_page_url)): ?>
-    <a href="<?= $next_page_url ?>" class="g-button ui-icon-right ui-state-default ui-corner-all">
+    <a href="<?= $next_page_url ?>" class="g-button ui-icon-right ui-state-default ui-corner-all" rel="next">
       <span class="ui-icon ui-icon-seek-next"></span><?= t("Next") ?></a>
   <?php else: ?>
     <a class="g-button ui-state-disabled ui-icon-right ui-corner-all">
