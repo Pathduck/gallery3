@@ -796,7 +796,7 @@ class Item_Model_Core extends ORM_MPTT {
       // Note that the extension list below doesn't use the legal_file helper but rather
       // is hard-coded based on player specifications.
       $extension = strtolower(pathinfo($movie_img->filename, PATHINFO_EXTENSION));
-      if (in_array($extension, array("webm", "ogv", "mp4", "flv", "m4v", "mov", "f4v", "wmv"))) {
+      if (in_array($extension, array("webm", "ogv", "mp4", "flv", "m4v", "mov", "f4v", "wmv", "mkv"))) {
         // Filetype supported by MediaElementPlayer - use it (default)
         $view = new View("movieplayer.html");
         $view->width = $movie_img->width;
