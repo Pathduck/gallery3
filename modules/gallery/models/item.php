@@ -802,7 +802,7 @@ class Item_Model_Core extends ORM_MPTT {
         $view->width = $movie_img->width;
         $view->height = $movie_img->height;
         $view->div_attrs = $movie_img->div_attrs;
-        $view->video_attrs = array_merge(array("controls" => "controls", "autoplay" => "autoplay",
+        $view->video_attrs = array_merge(array("controls" => "", "preload" => "metadata",
                                          "style" => "width: 100%; max-width: 100%",
                                          "poster" => $this->thumb_url()), $movie_img->video_attrs);
         $view->source_attrs = array("type" => legal_file::get_movie_types_by_extension($extension),
